@@ -44,8 +44,8 @@ export default function Blog() {
                     <span className="flex items-center gap-1"><User className="h-3 w-3" /> {post.author}</span>
                     <span className="flex items-center gap-1"><Calendar className="h-3 w-3" /> {post.date}</span>
                   </div>
-                  <Button variant="ghost" size="sm" className="ml-auto">
-                    Read Article <ArrowRight className="ml-2 h-3 w-3" />
+                  <Button asChild variant="ghost" size="sm" className="ml-auto">
+                    <span>Read Article <ArrowRight className="ml-2 h-3 w-3" /></span>
                   </Button>
                 </CardFooter>
               </div>

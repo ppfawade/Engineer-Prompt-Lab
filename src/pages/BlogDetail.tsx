@@ -37,7 +37,7 @@ export default function BlogDetail() {
       </div>
 
       <article 
-        className="prose prose-slate dark:prose-invert max-w-none"
+        className="prose prose-slate dark:prose-invert max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-ul:text-foreground prose-li:text-foreground prose-a:text-primary"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
       
