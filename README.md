@@ -2,6 +2,8 @@
 
 A curated reference of the **Top Prompt Frameworks Engineers Should Use in 2026**.
 
+**Live Demo:** [https://engineer-prompt-lab.vercel.app/](https://engineer-prompt-lab.vercel.app/)
+
 ## Project Overview
 
 EngineerPromptLab is a web application designed to help mechanical engineers, product designers, and hardware founders leverage AI tools more effectively. It provides structured prompt frameworks, an interactive prompt builder, and a library of copy-paste ready engineering prompts.
@@ -16,13 +18,20 @@ EngineerPromptLab is a web application designed to help mechanical engineers, pr
 
 ## Tech Stack
 
-- **Framework**: React 19 + Vite (Simulating Next.js App Router structure)
+- **Framework**: React 19 + Vite
 - **Language**: TypeScript
 - **Styling**: TailwindCSS v4
 - **UI Components**: Custom components inspired by shadcn/ui
-- **Routing**: React Router DOM
+- **Routing**: React Router DOM v7
 - **Icons**: Lucide React
-- **Animation**: Framer Motion
+- **Animation**: Motion (formerly Framer Motion)
+- **AI Integration**: Google GenAI SDK
+
+## AI Disclosure
+
+This website and its content were developed with the assistance of Artificial Intelligence.
+- **Code Generation**: The codebase was built using AI coding assistants to accelerate development and implement best practices.
+- **Content**: Some prompt templates and blog outlines were generated or refined by AI models, then reviewed for engineering accuracy.
 
 ## Installation
 

@@ -135,7 +135,7 @@ export function Footer() {
           </p>
         </div>
         <div className="flex space-x-6">
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-primary">GitHub</a>
+          <a href="https://github.com/ppfawade/Engineer-Prompt-Lab" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-primary">GitHub</a>
           <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary">Privacy</Link>
           <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary">Terms</Link>
         </div>
