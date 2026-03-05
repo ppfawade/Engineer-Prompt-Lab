@@ -1,0 +1,142 @@
+[
+  {
+    "id": "design-review-pack",
+    "category": "Design Review Prompt Pack",
+    "title": "Comprehensive Design Review",
+    "description": "A holistic prompt to act as a senior engineer reviewing a design for common pitfalls.",
+    "prompt": "Act as a Senior Principal Mechanical Engineer with 20 years of experience in [Insert Industry, e.g., Consumer Electronics]. Review the following design description/parameters for potential issues. Focus on: 1. Manufacturability (DFM), 2. Assembly (DFA), 3. Structural Integrity, 4. Cost drivers. \n\nDesign Description: [Insert Description]"
+  },
+  {
+    "id": "tolerance-stack",
+    "category": "Design Review Prompt Pack",
+    "title": "Tolerance Stack Analysis Assistant",
+    "description": "Helps set up a linear tolerance stack-up calculation.",
+    "prompt": "I need to perform a worst-case tolerance stack-up analysis for [Assembly Name]. \nGoal: Determine the minimum and maximum gap at [Location].\nList of dimensions involved:\n1. [Dim 1] +/- [Tol 1]\n2. [Dim 2] +/- [Tol 2]\n...\nIdentify the loop, determine which dimensions are positive/negative contributors, and calculate the resultant gap range."
+  },
+  {
+    "id": "material-selection",
+    "category": "General Engineering Prompts",
+    "title": "Material Selection Assistant",
+    "description": "Suggests materials based on environmental and loading constraints.",
+    "prompt": "Act as a Materials Scientist. I need to select a material for a [Part Name].\nOperating Conditions:\n- Temperature: [Min] to [Max] C\n- Environment: [e.g., Saltwater, UV exposure, Oil]\n- Load: [e.g., High impact, Static load]\n- Cost constraint: [Low/Medium/High]\n\nSuggest 3 candidate materials. For each, list: Pros, Cons, and typical yield strength."
+  },
+  {
+    "id": "fmea-generator",
+    "category": "Failure Analysis Prompts",
+    "title": "DFMEA Generator",
+    "description": "Generates a draft Design Failure Mode and Effects Analysis.",
+    "prompt": "Create a draft DFMEA (Design Failure Mode and Effects Analysis) for a [Component Name, e.g., Bicycle Brake Caliper].\nFormat: Table.\nColumns: Function, Potential Failure Mode, Potential Effect of Failure, Potential Cause, Recommended Action.\nFocus on safety-critical failure modes."
+  },
+  {
+    "id": "root-cause-5whys",
+    "category": "Failure Analysis Prompts",
+    "title": "Root Cause 5 Whys",
+    "description": "Guides a 5 Whys investigation for a specific failure.",
+    "prompt": "I am investigating a failure: [Describe Failure, e.g., The shaft sheared at the keyway].\nAct as a Failure Analyst. Walk me through a '5 Whys' analysis to find the root cause. Ask me questions if you need more details about the operating conditions or fracture surface."
+  },
+  {
+    "id": "mfg-process-select",
+    "category": "Manufacturing Planning Prompts",
+    "title": "Manufacturing Process Selector",
+    "description": "Recommends manufacturing processes based on volume and geometry.",
+    "prompt": "I have a part with the following characteristics:\n- Material: [Material]\n- Annual Volume: [Quantity]\n- Complexity: [e.g., Undercuts, thin walls]\n- Tolerance requirements: [e.g., +/- 0.05mm]\n\nRecommend the best manufacturing process (e.g., CNC, Injection Molding, Die Casting, 3D Printing) and explain why based on cost and capability."
+  },
+  {
+    "id": "cnc-fixture-design",
+    "category": "Manufacturing Planning Prompts",
+    "title": "CNC Fixture Design Brainstorm",
+    "description": "Brainstorms holding strategies for machining.",
+    "prompt": "I need to machine a [Part Geometry description] on a 3-axis mill.\nSuggest 3 fixturing strategies to hold this part securely while maximizing access to features. Consider setup time and rigidity."
+  },
+  {
+    "id": "cost-reduction",
+    "category": "General Engineering Prompts",
+    "title": "Cost Reduction Brainstorm",
+    "description": "Identifies potential areas to reduce part cost.",
+    "prompt": "Review this part design for cost reduction opportunities.\nCurrent Design: [Description/Material/Process].\nTarget: Reduce unit cost by 20%.\nSuggest changes to geometry, material, or tolerances that would lower manufacturing costs without compromising function."
+  },
+  {
+    "id": "datasheet-summary",
+    "category": "General Engineering Prompts",
+    "title": "Datasheet Summarizer",
+    "description": "Extracts key parameters from a pasted datasheet text.",
+    "prompt": "I will paste the text from a component datasheet below. Extract the following parameters into a clean table:\n1. Input Voltage Range\n2. Max Current Rating\n3. Operating Temperature Range\n4. Pinout configuration\n\nDatasheet text: [Paste Text]"
+  },
+  {
+    "id": "code-generation",
+    "category": "General Engineering Prompts",
+    "title": "Engineering Python Script",
+    "description": "Generates Python code for engineering calculations.",
+    "prompt": "Write a Python script using 'numpy' and 'matplotlib'.\nTask: Calculate and plot the shear and bending moment diagrams for a simply supported beam with a distributed load w = [Value] N/m and length L = [Value] m.\nInclude comments explaining the equations used."
+  },
+  {
+    "id": "compliance-check",
+    "category": "Design Review Prompt Pack",
+    "title": "Regulatory Compliance Checklist",
+    "description": "Generates a checklist for standard compliance.",
+    "prompt": "I am designing a [Product, e.g., Medical Device / Consumer Toy].\nList the key regulatory standards (ISO, ASTM, FDA, CE) that typically apply to this product category. Create a high-level compliance checklist for the design phase."
+  },
+  {
+    "id": "supplier-email",
+    "category": "Manufacturing Planning Prompts",
+    "title": "Supplier RFQ Email",
+    "description": "Drafts a professional Request for Quote email.",
+    "prompt": "Draft a professional email to a new manufacturing supplier requesting a quote (RFQ).\nItems: [Part Numbers]\nQuantities: [500, 1000, 5000]\nAttachments: Drawings and STEP files.\nAsk for: Lead time, unit price, and tooling costs. Tone: Professional and direct."
+  },
+  {
+    "id": "injection-molding-defect",
+    "category": "Failure Analysis Prompts",
+    "title": "Injection Molding Defect Troubleshooter",
+    "description": "Diagnoses common molding defects.",
+    "prompt": "I am seeing [Defect, e.g., Sink Marks / Flash / Short Shots] on my injection molded part.\nMaterial: [Material]\nSuggest 3 potential process parameter adjustments (Temperature, Pressure, Time) to resolve this, and 1 potential tooling change."
+  },
+  {
+    "id": "bolt-calc",
+    "category": "General Engineering Prompts",
+    "title": "Bolted Joint Calculator",
+    "description": "Sets up the logic for a bolted joint calculation.",
+    "prompt": "Help me calculate the required bolt torque.\nBolt Size: [Size, e.g., M6]\nBolt Class: [Class, e.g., 8.8]\nFriction Coefficient: 0.15 (assumed)\nTarget Preload: 75% of proof load.\nShow the formula for torque T = K * F * d and calculate the value."
+  },
+  {
+    "id": "thermal-analysis",
+    "category": "General Engineering Prompts",
+    "title": "Thermal Analysis Setup",
+    "description": "Prepares inputs for a thermal simulation or calc.",
+    "prompt": "I need to estimate the steady-state temperature of a heatsink.\nPower Input: [Watts]\nAmbient Temp: [Temp C]\nHeatsink Thermal Resistance: [R_th C/W]\nCalculate the junction temperature and explain the thermal resistance network analogy."
+  },
+  {
+    "id": "doe-setup",
+    "category": "Research",
+    "title": "Design of Experiments (DOE) Setup",
+    "description": "Plans a DOE to test variables.",
+    "prompt": "I want to optimize a process with 3 variables: [Var A], [Var B], [Var C].\nSuggest a Design of Experiments (DOE) matrix (e.g., Full Factorial or Taguchi) to identify the most influential factors with the minimum number of runs."
+  },
+  {
+    "id": "patent-search",
+    "category": "Research",
+    "title": "Patent Search Keywords",
+    "description": "Generates keywords for a prior art search.",
+    "prompt": "I am inventing a [Brief Description of Invention].\nGenerate a list of 20 keywords and boolean search strings to use in Google Patents to find prior art. Include synonyms and alternative technical terms."
+  },
+  {
+    "id": "technical-documentation",
+    "category": "General Engineering Prompts",
+    "title": "User Manual Writer",
+    "description": "Drafts a section of a user manual.",
+    "prompt": "Write a 'Safety Warnings' section for a user manual for a [Product Name].\nInclude standard warnings for: Electrical Shock, Moving Parts, and Hot Surfaces.\nStyle: Clear, imperative, and compliant with ANSI Z535 standards."
+  },
+  {
+    "id": "meeting-minutes",
+    "category": "General Engineering Prompts",
+    "title": "Engineering Meeting Minutes",
+    "description": "Formats rough notes into minutes.",
+    "prompt": "Convert these rough notes from a design review meeting into formal Meeting Minutes.\nFormat: Attendees, Agenda, Key Decisions, Action Items (with owners and due dates).\nNotes: [Paste Notes]"
+  },
+  {
+    "id": "unit-conversion",
+    "category": "General Engineering Prompts",
+    "title": "Complex Unit Converter",
+    "description": "Converts mixed units to a standard system.",
+    "prompt": "Convert the following values to SI Units (Meters, Kilograms, Seconds, Pascals):\n1. Pressure: [Value] PSI\n2. Flow rate: [Value] GPM\n3. Torque: [Value] in-lbs\n4. Power: [Value] HP"
+  }
+]
